@@ -13,6 +13,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import imageCountryInfo from '../assets/country_info.PNG';
 import imagePhoneBook from '../assets/phone_book.PNG'
+import imagePortfolio from '../assets/portfolio.PNG'
 
 
 
@@ -59,6 +60,14 @@ const myProjects = [
         name: 'Phone Book',
         description: 'This project is about a phone book. It has add, delete, search\
         functionalities and json-server locally created. This project has not been deployed.',
+        gitLink: 'https://github.com/mahmudulhasan5050/phone-book',
+        link: ''
+    },
+    {
+        image: imagePortfolio,
+        name: 'My Portfolio',
+        description: 'This project is my own portfolio. I have used Material UI\
+        for designing. This site is mobile responsive.',
         gitLink: 'https://github.com/mahmudulhasan5050/phone-book',
         link: ''
     }
