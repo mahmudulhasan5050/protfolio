@@ -50,24 +50,24 @@ const myProjects = [
     {
         image: imageCountryInfo,
         name: 'Country Info',
-        description: 'This Project was built to call API using Axios.\
-         Here all components are in the same page (App.js). Styling has been ignored in this project',
+        description: 'This Project was built to call API using Axios.'+
+         ' Here all components are in the same page (App.js). Styling has been ignored in this project',
         gitLink: 'https://github.com/mahmudulhasan5050/country_info',
         link: 'https://hardcore-wright-883a19.netlify.app/'
     },
     {
         image: imagePhoneBook,
         name: 'Phone Book',
-        description: 'This project is about a phone book. It has add, delete, search\
-        functionalities and json-server locally created. This project has not been deployed.',
+        description: 'This project is about a phone book. It has add, delete, search'+
+        ' functionalities and json-server locally created. This project has not been deployed.',
         gitLink: 'https://github.com/mahmudulhasan5050/phone-book',
         link: ''
     },
     {
         image: imagePortfolio,
         name: 'My Portfolio',
-        description: 'This project is my own portfolio. I have used Material UI\
-        for designing. This site is mobile responsive.',
+        description: 'This project is my own portfolio. I have used Material UI'+
+        ' for designing. This site is mobile responsive.',
         gitLink: 'https://github.com/mahmudulhasan5050/phone-book',
         link: ''
     }
