@@ -90,8 +90,8 @@ export default function Projects() {
             </Grid>
             <Grid item>
                 <Grid container justify='center'>
-                    {myProjects.map(myPro =>
-                        <Grid item sm={12} md={4} className={classes.gridItemAll}>
+                    {myProjects.map((myPro, i) =>
+                        <Grid item sm={12} md={4} className={classes.gridItemAll} key={i+"project"}>
                             <Card className={classes.card}>
                                 <CardMedia
                                     component="img"

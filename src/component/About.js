@@ -59,7 +59,7 @@ const useStyles = makeStyles(theme => ({
         width: '35%',
         [theme.breakpoints.down('sm')]: {
             width: '80%',
-            marginBottom:'6em'
+            marginBottom: '6em'
         }
     },
     card: {
@@ -89,27 +89,28 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const typographyForBio = [
-    'This is S M Mahmudul Hasan. A software development'+
- ' enthusiast and guitar lover.',
+    'This is S M Mahmudul Hasan. A software development' +
+    ' enthusiast and guitar lover.',
 
-    'At present seeking a place as a full stack developer'+
- ' in any suitable company where I'+
- ' can show my skill and detication to florish my career.',
+    'At present seeking a place as a full stack developer' +
+    ' in any suitable company where I' +
+    ' can show my skill and detication to florish my career.',
 
-    'Coding is my passion and love to learn new technologies believe'+
-    ' in team work and like to take new challenges. My exellent communication skill and'+
+    'Coding is my passion and love to learn new technologies believe' +
+    ' in team work and like to take new challenges. My exellent communication skill and' +
     ' team oriented attitude could be helpful of a development team.',
 
-    'I am sincerely looking forward for a new opportunities in the'+
-    ' field of Software Engineering and Software Development as a Trainee,'+
-    ' Full Stack Developer, Software Developer and Web Developer. I am prepared'+
-    ' and exited about the opportunities and challenges'+
-    ' waiting for me in the future. I also believe that I have the required'+
+    'I am sincerely looking forward for a new opportunities in the' +
+    ' field of Software Engineering and Software Development as a Trainee,' +
+    ' Full Stack Developer, Software Developer and Web Developer. I am prepared' +
+    ' and exited about the opportunities and challenges' +
+    ' waiting for me in the future. I also believe that I have the required' +
     ' potential, motivation and skills.'
 ];
 
 const eduSkillInfo = [
     {
+        id: '1',
         title: 'EDUCATION',
         text1: 'Bachelor of Engineering, Information Technology, 2012-2018.',
         text2: 'Centria University of Applied Sciences, Kokkola',
@@ -130,6 +131,7 @@ const eduSkillInfo = [
         ]
     },
     {
+        id: '2',
         title: 'SKILLS & COMPETENCE',
         text1: 'Agile Methodologes.',
         text2: 'Version Control: Git & Github.',
@@ -177,14 +179,15 @@ const About = () => {
                         <Avatar alt='My Photo' src={image} className={classes.avatar} />
                     </Grid>
                     <Hidden smDown>
-                    <Grid item >
-                        <Divider orientation='vertical' className={classes.divider} />
-                    </Grid>
+                        <Grid item >
+                            <Divider orientation='vertical' className={classes.divider} />
+                        </Grid>
                     </Hidden>
                     <Grid item className={classes.bio}>
                         <Typography variant='h5' align={matchesSm ? 'center' : undefined}>BIO</Typography>
-                        {typographyForBio.map(textItem =>
+                        {typographyForBio.map((textItem, i) =>
                             <Typography className={classes.typographyTextBio}
+                                key={i+"bio"}
                                 align={matchesSm ? 'center' : undefined}>
                                 {textItem}
                             </Typography>
@@ -194,22 +197,26 @@ const About = () => {
             </Grid>
 
             <Grid item>
-                    <Grid container direction={matchesSm ? 'coulmn' : 'row'}
-                        justify='space-around'
-                        className={classes.infoBoxes}>
-                             {eduSkillInfo.map(item =>
-                        <Grid item className={classes.gridCard}>
+                <Grid container direction={matchesSm ? 'column' : 'row'}
+                    justify='space-around'
+                    className={classes.infoBoxes}>
+                    {eduSkillInfo.map((item, i) =>
+                        <Grid item className={classes.gridCard} key={i+"grid"}>
                             <Card className={classes.card}>
                                 <Typography variant='h5'
                                     className={classes.titleCard}
+         
+                                    
+
                                     align={matchesSm ? 'center' : undefined}>
                                     {item.title}
                                 </Typography>
-                                <Grid container 
-                                direction='column' 
-                                alignItems={matchesSm ? 'center':'flex-start'}>
+                                <Grid container
+                                    direction='column'
+                                    alignItems={matchesSm ? 'center' : 'flex-start'}>
                                     <Grid item>
                                         <Typography className={classes.subTitleCard}
+                                 
                                             align={matchesSm ? 'center' : undefined}>
                                             {item.text1}
                                         </Typography>
@@ -225,8 +232,8 @@ const About = () => {
                                         </Typography>
                                     </Grid>
                                     <Grid item className={classes.list}>
-                                        {item.list.map(element =>
-                                            <List >
+                                        {item.list.map((element, i) =>
+                                            <List key={"eachElement"+i}>
                                                 <ListItemText>{element}</ListItemText>
                                             </List>
                                         )}
@@ -234,9 +241,9 @@ const About = () => {
                                 </Grid>
                             </Card>
                         </Grid>
-    )}
-                    </Grid>
-            
+                    )}
+                </Grid>
+
             </Grid>
 
         </Grid>
