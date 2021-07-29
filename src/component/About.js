@@ -199,6 +199,7 @@ const About = () => {
             <Grid item>
                 <Grid container direction={matchesSm ? 'column' : 'row'}
                     justify='space-around'
+                    alignItems={matchesSm ? 'center': undefined}
                     className={classes.infoBoxes}>
                     {eduSkillInfo.map((item, i) =>
                         <Grid item className={classes.gridCard} key={i+"grid"}>

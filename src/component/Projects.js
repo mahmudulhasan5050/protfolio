@@ -35,6 +35,7 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: 'rgb(0,0,0,0.1)',
         color: '#ffffff',
         margin: '1em 1em 0em 1em',
+        minHeight:380
     },
     media: {
         height: 200,
@@ -68,8 +69,8 @@ const myProjects = [
         name: 'My Portfolio',
         description: 'This project is my own portfolio. I have used Material UI'+
         ' for designing. This site is mobile responsive.',
-        gitLink: 'https://github.com/mahmudulhasan5050/phone-book',
-        link: ''
+        gitLink: 'https://github.com/mahmudulhasan5050/protfolio',
+        link: 'https://heuristic-mahavira-b84f4a.netlify.app/'
     }
 ]
 
