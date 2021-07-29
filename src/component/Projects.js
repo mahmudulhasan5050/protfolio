@@ -12,8 +12,9 @@ import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import imageCountryInfo from '../assets/country_info.PNG';
-import imagePhoneBook from '../assets/phone_book.PNG'
-import imagePortfolio from '../assets/portfolio.PNG'
+import imagePhoneBook from '../assets/phone_book.PNG';
+import imagePortfolio from '../assets/portfolio.PNG';
+import imageTimeCounter from '../assets/time_counter.PNG';
 
 
 
@@ -71,6 +72,13 @@ const myProjects = [
         ' for designing. This site is mobile responsive.',
         gitLink: 'https://github.com/mahmudulhasan5050/protfolio',
         link: 'https://heuristic-mahavira-b84f4a.netlify.app/'
+    },
+    {
+        image: imageTimeCounter,
+        name: 'Time Counter',
+        description: 'This project is to calculate how much time left from the desired date.',
+        gitLink: 'https://github.com/mahmudulhasan5050/count_down_timer',
+        link: 'https://laughing-northcutt-22ec3c.netlify.app/'
     }
 ]
 
