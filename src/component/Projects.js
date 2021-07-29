@@ -114,7 +114,7 @@ export default function Projects() {
                                         variant="h5"
                                         component="h2"
                                         align={matchesSm ? 'center' : undefined}>
-                                        {myPro.title}
+                                        {myPro.name}
                                     </Typography>
                                     <Typography variant="body2"
                                         component="p"
