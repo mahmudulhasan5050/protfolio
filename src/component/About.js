@@ -94,18 +94,19 @@ const typographyForBio = [
 
     'At present seeking a place as a full stack developer' +
     ' in any suitable company where I' +
-    ' can show my skill and detication to florish my career.',
+    ' can show my skill and dedication to flourish my career.',
 
-    'Coding is my passion and love to learn new technologies believe' +
+    'Coding is my passion and love to learn new technologies, believe' +
     ' in team work and like to take new challenges. My exellent communication skill and' +
     ' team oriented attitude could be helpful of a development team.',
 
-    'I am sincerely looking forward for a new opportunities in the' +
+    'I am sincerely looking forward for new opportunities in the' +
     ' field of Software Engineering and Software Development as a Trainee,' +
-    ' Full Stack Developer, Software Developer and Web Developer. I am prepared' +
+    ' Full Stack Developer and Software Developer. I am prepared' +
     ' and exited about the opportunities and challenges' +
     ' waiting for me in the future. I also believe that I have the required' +
     ' potential, motivation and skills.'
+
 ];
 
 const eduSkillInfo = [
