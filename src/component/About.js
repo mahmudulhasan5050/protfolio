@@ -97,13 +97,13 @@ const typographyForBio = [
     ' can show my skill and dedication to flourish my career.',
 
     'Coding is my passion and love to learn new technologies, believe' +
-    ' in team work and like to take new challenges. My exellent communication skill and' +
+    ' in team work and like to take new challenges. My excellent communication skill and' +
     ' team oriented attitude could be helpful of a development team.',
 
     'I am sincerely looking forward for new opportunities in the' +
     ' field of Software Engineering and Software Development as a Trainee,' +
     ' Full Stack Developer and Software Developer. I am prepared' +
-    ' and exited about the opportunities and challenges' +
+    ' and excited about the opportunities and challenges' +
     ' waiting for me in the future. I also believe that I have the required' +
     ' potential, motivation and skills.'
 
