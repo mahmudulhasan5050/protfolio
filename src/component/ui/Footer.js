@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+//import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const useStyles = makeStyles(theme => ({
     footer: {
@@ -38,7 +38,7 @@ export default function Footer() {
             <Grid container justify={matchesSm ? 'center':'flex-end'} className={classes.mainContainer}>
                 <Grid item className={classes.iconGrid}>
                    <a href='https://github.com/mahmudulhasan5050' alt='github'> <GitHubIcon className={classes.icons} /></a>
-                    <LinkedInIcon className={classes.icons} />
+                    {/*<LinkedInIcon className={classes.icons} />*/}
                 </Grid>
             </Grid>
 
