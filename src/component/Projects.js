@@ -15,6 +15,7 @@ import imageCountryInfo from '../assets/country_info.PNG';
 import imagePhoneBook from '../assets/phone_book.PNG';
 import imagePortfolio from '../assets/portfolio.PNG';
 import imageTimeCounter from '../assets/time_counter.PNG';
+import imageTodo from '../assets/todo.PNG';
 
 
 
@@ -57,6 +58,14 @@ const myProjects = [
         gitLink: 'https://github.com/mahmudulhasan5050/country_info',
         link: 'https://hardcore-wright-883a19.netlify.app/'
     },
+    {
+        image: imageTodo,
+        name: 'Todo List',
+        description: 'This project is a todo list application. It is possible to create own daily'+
+        ' small tasks list, mark as completed and possible to sort done and undone tasks.',
+        gitLink: 'https://github.com/mahmudulhasan5050/todo',
+        link: 'https://heuristic-liskov-d4c09d.netlify.app/'
+    }
     {
         image: imagePhoneBook,
         name: 'Phone Book',
