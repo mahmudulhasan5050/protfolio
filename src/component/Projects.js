@@ -65,7 +65,7 @@ const myProjects = [
         ' small tasks list, mark as completed and possible to sort done and undone tasks.',
         gitLink: 'https://github.com/mahmudulhasan5050/todo',
         link: 'https://heuristic-liskov-d4c09d.netlify.app/'
-    }
+    },
     {
         image: imagePhoneBook,
         name: 'Phone Book',
