@@ -11,6 +11,8 @@ import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import VisibilityIcon from '@material-ui/icons/Visibility';
+
+import imageMovieRating from '../assets/movie_rating.PNG';
 import imageCountryInfo from '../assets/country_info.PNG';
 import imagePhoneBook from '../assets/phone_book.PNG';
 import imagePortfolio from '../assets/portfolio.PNG';
@@ -50,6 +52,14 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const myProjects = [
+    {
+        image: imageMovieRating,
+        name: 'Movie Rating',
+        description: 'This application is made to review and rate movies.'+
+         ' In this project, React, Express and MySql have been used.',
+        gitLink: 'https://github.com/mahmudulhasan5050/movie_rating',
+        link: 'https://youthful-ritchie-1dc87e.netlify.app/'
+    },
     {
         image: imageCountryInfo,
         name: 'Country Info',
