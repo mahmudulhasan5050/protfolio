@@ -144,12 +144,12 @@ export default function Projects() {
 
                                 <CardActions>
                                     <Button size="small">
-                                        <a href={myPro.gitLink} alt='git link'>
+                                        <a href={myPro.gitLink} alt='git link' target='_blank'>
                                             <GitHubIcon className={classes.icons} />
                                         </a>
                                     </Button>
                                     <Button size="small">
-                                        <a href={myPro.link} alt='view link'>
+                                        <a href={myPro.link} alt='view link' target='_blank'>
                                             <VisibilityIcon className={classes.icons} />
                                         </a>
                                     </Button>
