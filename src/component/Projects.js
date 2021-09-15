@@ -18,6 +18,7 @@ import imagePhoneBook from '../assets/phone_book.PNG';
 import imagePortfolio from '../assets/portfolio.PNG';
 import imageTimeCounter from '../assets/time_counter.PNG';
 import imageTodo from '../assets/todo.PNG';
+import explore from '../assets/explore.PNG';
 
 
 
@@ -52,6 +53,14 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const myProjects = [
+    {
+        image: explore,
+        name: 'Memory Sharing Site',
+        description: 'This site is a platform to share good memories.'+
+         ' In this project MERN stack has been used.',
+        gitLink: 'https://github.com/mahmudulhasan5050/mernexplore',
+        link: 'https://amazing-curran-f63f52.netlify.app'
+    },
     {
         image: imageMovieRating,
         name: 'Movie Rating',
