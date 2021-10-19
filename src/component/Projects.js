@@ -78,14 +78,6 @@ const myProjects = [
         link: 'https://heuristic-liskov-d4c09d.netlify.app/'
     },
     {
-        image: imagePhoneBook,
-        name: 'Phone Book',
-        description: 'This project is about a phone book. It has add, delete, search'+
-        ' functionalities and json-server locally created. This project has not been deployed.',
-        gitLink: 'https://github.com/mahmudulhasan5050/phone-book',
-        link: ''
-    },
-    {
         image: imagePortfolio,
         name: 'My Portfolio',
         description: 'This project is my own portfolio. I have used Material UI'+
