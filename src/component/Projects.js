@@ -70,14 +70,6 @@ const myProjects = [
         link: 'https://youthful-ritchie-1dc87e.netlify.app/'
     },
     {
-        image: imageCountryInfo,
-        name: 'Country Info',
-        description: 'This Project was built to call API using Axios.'+
-         ' Here all components are in the same page (App.js). Styling has been ignored in this project',
-        gitLink: 'https://github.com/mahmudulhasan5050/country_info',
-        link: 'https://hardcore-wright-883a19.netlify.app/'
-    },
-    {
         image: imageTodo,
         name: 'Todo List',
         description: 'This project is a todo list application. It is possible to create own daily'+
