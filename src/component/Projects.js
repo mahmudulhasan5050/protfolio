@@ -13,10 +13,10 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 
 import imageMovieRating from '../assets/movie_rating.PNG';
-import imageCountryInfo from '../assets/country_info.PNG';
-import imagePhoneBook from '../assets/phone_book.PNG';
 import imagePortfolio from '../assets/portfolio.PNG';
 import imageTimeCounter from '../assets/time_counter.PNG';
+import imageKeyboard from '../assets/keyboard.PNG';
+import imageLocalStorage from '../assets/localStorage.PNG';
 import imageTodo from '../assets/todo.PNG';
 import explore from '../assets/explore.PNG';
 
@@ -68,6 +68,22 @@ const myProjects = [
          ' In this project, React, Express and MySql have been used.',
         gitLink: 'https://github.com/mahmudulhasan5050/movie_rating',
         link: 'https://youthful-ritchie-1dc87e.netlify.app/'
+    },
+    {
+        image: imageKeyboard,
+        name: 'Keyboard Game',
+        description: 'When user presses right letter, letter will disappear from the screen.'+
+         ' JavaScript has been used in this project.',
+        gitLink: 'https://github.com/mahmudulhasan5050/javascript_keyboard',
+        link: 'https://epic-cray-bb0a26.netlify.app/'
+    },
+    {
+        image: imageLocalStorage,
+        name: 'LocalStorage',
+        description: 'In this project, local storage has been used to save data.'+
+         ' JavaScript has been used in this project.',
+        gitLink: 'https://github.com/mahmudulhasan5050/javascript_data_localstorage',
+        link: 'https://competent-elion-6af5b0.netlify.app/'
     },
     {
         image: imageTodo,
