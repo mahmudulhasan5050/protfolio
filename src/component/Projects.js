@@ -75,7 +75,7 @@ const myProjects = [
         description: 'When user presses right letter, letter will disappear from the screen.'+
          ' JavaScript has been used in this project.',
         gitLink: 'https://github.com/mahmudulhasan5050/javascript_keyboard',
-        link: 'https://epic-cray-bb0a26.netlify.app/'
+        link: 'https://sleepy-raman-12f4f1.netlify.app/'
     },
     {
         image: imageLocalStorage,
