@@ -88,7 +88,7 @@ const myProjects = [
     {
         image: imageTodo,
         name: 'Todo List',
-        description: 'This project is a todo list application. It is possible to create own daily'+
+        description: 'This project is a todo list application (with TypeScript). It is possible to create own daily'+
         ' small tasks list, mark as completed and possible to sort done and undone tasks.',
         gitLink: 'https://github.com/mahmudulhasan5050/todo',
         link: 'https://heuristic-liskov-d4c09d.netlify.app/'
