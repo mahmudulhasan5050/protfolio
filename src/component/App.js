@@ -8,7 +8,7 @@ import Header from './ui/Header';
 import Footer from '../component/ui/Footer';
 import Home from '../component/Home';
 import About from '../component/About';
-import Projects from '../component/Projects';
+import Projects from '../component/projects/Projects';
 
 
 

@@ -29,14 +29,14 @@ const useStyles = makeStyles(theme => ({
         }
     },
     textTwo: {
-        fontSize: '2em',
+        fontSize: '1.9em',
         [theme.breakpoints.down('sm')]: {
             fontSize: '1.2em'
         }
 
     },
     contact: {
-        margin: '9em 0em 4em 0em'
+        margin: '4em 0em 1em 0em'
     },
     textcontact: {
         margin: '0em 3em 0em 0em',
@@ -65,6 +65,11 @@ const Home = () => {
             <Grid item className={classes.name}>
                 <Typography className={classes.textTwo}>
                     Full Stack Developer, Software Engineer
+                </Typography>
+            </Grid>
+            <Grid item className={classes.name}>
+                <Typography className={classes.textTwo}>
+                    AWS Certified Cloud Practitioner
                 </Typography>
             </Grid>
             <Grid item container direction='column' alignItems={matchesSm ? 'center' : 'flex-end'} className={classes.contact}>

@@ -143,14 +143,17 @@ const eduSkillInfo = [
             'JavaScript ECMA6',
             'React',
             'NodeJs',
+            'Redux',
             'C#',
             'Axios',
             'Express',
             'MySQL Database',
+            'MongoDB',
             'RESTful API',
             'Bootstrap framework',
             'Responsive Design',
-            'AdobeXD'
+            'AdobeXD',
+            'AWS Cloud Practitioner Certification'
         ]
     }
 ]
