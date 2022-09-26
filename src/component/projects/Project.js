@@ -12,16 +12,16 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import js from 'programming-languages-logos/src/javascript/javascript.svg';
 import ts from 'programming-languages-logos/src/typescript/typescript.svg';
+import { findByLabelText } from '@testing-library/react';
 
 //import useReadmeHook from '../../custom-hook/useReadmeHook';
 
 const useStyles = makeStyles(theme => ({
-
     card: {
         backgroundColor: 'rgb(0,0,0,0.1)',
         color: '#ffffff',
         margin: '1em 1em 0em 1em',
-        minHeight: 380
+        minHeight: 450,
     },
     media: {
         height: 200,
