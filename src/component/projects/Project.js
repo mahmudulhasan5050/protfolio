@@ -12,9 +12,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import js from 'programming-languages-logos/src/javascript/javascript.svg';
 import ts from 'programming-languages-logos/src/typescript/typescript.svg';
-import { findByLabelText } from '@testing-library/react';
 
-//import useReadmeHook from '../../custom-hook/useReadmeHook';
+
 
 const useStyles = makeStyles(theme => ({
     card: {
@@ -39,14 +38,14 @@ const Project = ({ myPro }) => {
     const matchesSm = useMediaQuery(theme.breakpoints.down("sm"));
 
     const arr = ["JavaScript", "TypeScript"]
-    const lan = arr.find(it => (myPro.language === it))
+    const lan = arr.find(it => (myPro.type === it))
 
 
     return (
         <Card className={classes.card}>
             <CardMedia
                 component="img"
-                alt={myPro.title}
+                alt={myPro.type}
                 className={classes.media}
                 height="140"
                 image={(lan === 'JavaScript') ? js : ts}
@@ -61,18 +60,23 @@ const Project = ({ myPro }) => {
                 <Typography variant="body2"
                     component="p"
                     align={matchesSm ? 'center' : undefined}>
-                    {myPro.description}
+                    Features: {myPro.features}
+                </Typography>
+                <Typography variant="body2"
+                    component="p"
+                    align={matchesSm ? 'center' : undefined}>
+                    Technologies: {myPro.technology}
                 </Typography>
             </CardContent>
 
             <CardActions>
                 <Button size="small">
-                    <a href={myPro.html_url} alt='git link' target='_blank' rel='noopener noreferrer'>
+                    <a href={myPro.gitLink} alt='git link' target='_blank' rel='noopener noreferrer'>
                         <GitHubIcon className={classes.icons} />
                     </a>
                 </Button>
                 <Button size="small">
-                    <a href={myPro.homepage} alt='view link' target='_blank' rel='noopener noreferrer'>
+                    <a href={myPro.link} alt='view link' target='_blank' rel='noopener noreferrer'>
                         <VisibilityIcon className={classes.icons} />
                     </a>
                 </Button>

@@ -1,5 +1,5 @@
 {
-  
+
   "name": "portfolio",
   
   "version": "0.1.0",
@@ -25,9 +25,6 @@
   
     
   "@testing-library/user-event": "^12.8.3",
-  
-    
-  "axios": "^0.27.2",
   
     
   "programming-languages-logos": "^0.0.3",

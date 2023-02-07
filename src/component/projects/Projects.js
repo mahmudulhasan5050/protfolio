@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 
-
-import { getProjects } from '../../api';
 import Project from './Project';
 
 
@@ -28,24 +26,50 @@ const useStyles = makeStyles(theme => ({
 
 }));
  
+const myProjects = [
+    {
+        type: 'TypeScript',
+        name: 'Cake Ordering App',
+        features: 'Cake Ordering, Order status, Admin User, Login and Logout and more. ',
+        technology: 'Node JS, TypeScript, React, Redux Toolkit, Express, MongoDB, Material UI and AWS EC2 instance to deploy.',
+        gitLink: 'https://github.com/mahmudulhasan5050/project_cake_ordering_app',
+        link: 'http://ec2-16-170-228-119.eu-north-1.compute.amazonaws.com/'
+    },
+    {
+        type: 'TypeScript',
+        name: 'Country Info App',
+        features: 'Country Info Table, Searching, Individual Country Info, Favorite Country Table and Mobile Responsive. ',
+        technology: 'TypeScript, React, Redux and Material UI',
+        gitLink: 'https://github.com/mahmudulhasan5050/project_country_info',
+        link: 'https://ephemeral-valkyrie-4e4e57.netlify.app/'
+    },
+    {
+        type: 'JavaScript',
+        name: 'Breweries Info App',
+        features: 'List of Breweries Info, Searching, Individual Brewery Info and Mobile Responsive.',
+        technology: 'JavaScript, React and Material UI',
+        gitLink: 'https://github.com/mahmudulhasan5050/project_breweries',
+        link: 'https://vigilant-noyce-f53e5e.netlify.app/'
+    }
+]
 
 export default function Projects() {
-    const [projects, setProjects] = useState([])
+   // const [projects, setProjects] = useState([])
     const classes = useStyles();
     const theme = useTheme();
     const matchesSm = useMediaQuery(theme.breakpoints.down("sm"));
 
-    useEffect(() => {
-        getProjects().then(res => {
-            let regexText = /project?/
-            let newArrayOfProjects = res.data.filter(item => {
-                return item.name.match(regexText)
-            })
-            setProjects(newArrayOfProjects)
-        })
-    }, [])
+    // useEffect(() => {
+    //     getProjects().then(res => {
+    //         let regexText = /project_?/
+    //         let newArrayOfProjects = res.data.filter(item => {     
+    //             return item.name.match(regexText)
+    //         })
+    //         setProjects(newArrayOfProjects)
+    //     })
+    // }, [])
 
- console.log(projects)
+ console.log(myProjects)
     return (
 
         <Grid container direction='column' justify='center' className={classes.main}>
@@ -58,8 +82,8 @@ export default function Projects() {
             </Grid>
             <Grid item>
                 <Grid container justify='center'>
-                    {projects.map((myPro, i) =>
-                        <Grid item sm={12} md={4} className={classes.gridItemAll} key={i + "project"}>
+                    {myProjects.map((myPro, i) =>
+                        <Grid item sm={12} md={4} className={classes.gridItemAll} key={i}>
                             <Project myPro={myPro} />
                         </Grid>
                     )}
