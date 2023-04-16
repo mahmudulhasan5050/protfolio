@@ -36,6 +36,14 @@ const myProjects = [
         link: 'http://ec2-16-170-228-119.eu-north-1.compute.amazonaws.com/'
     },
     {
+        type: 'JavaScript',
+        name: 'ChatGPT with Voice',
+        features: 'In this application user can use ChatGPT writing text and using own voice',
+        technology: 'JavaScript, React, NodeJs, react-speech-recognition API, OpenAI API',
+        gitLink: 'https://github.com/mahmudulhasan5050/chatGPT_voice',
+        link: 'https://chatgpt-with-voice.netlify.app/'
+    },
+    {
         type: 'TypeScript',
         name: 'Country Info App',
         features: 'Country Info Table, Searching, Individual Country Info, Favorite Country Table and Mobile Responsive. ',
