@@ -40,7 +40,7 @@ const myProjects = [
         name: 'ChatGPT with Voice',
         features: 'In this application user can use ChatGPT writing text and using own voice',
         technology: 'JavaScript, React, NodeJs, react-speech-recognition API, OpenAI API',
-        gitLink: 'https://github.com/mahmudulhasan5050/chatGPT_voice',
+        gitLink: 'https://github.com/mahmudulhasan5050/ChatGPT_voice',
         link: ''
     },
     {
@@ -62,20 +62,9 @@ const myProjects = [
 ]
 
 export default function Projects() {
-   // const [projects, setProjects] = useState([])
     const classes = useStyles();
     const theme = useTheme();
     const matchesSm = useMediaQuery(theme.breakpoints.down("sm"));
-
-    // useEffect(() => {
-    //     getProjects().then(res => {
-    //         let regexText = /project_?/
-    //         let newArrayOfProjects = res.data.filter(item => {     
-    //             return item.name.match(regexText)
-    //         })
-    //         setProjects(newArrayOfProjects)
-    //     })
-    // }, [])
 
  console.log(myProjects)
     return (
