@@ -10,6 +10,7 @@ import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import VisibilityIcon from '@material-ui/icons/Visibility';
+import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import js from 'programming-languages-logos/src/javascript/javascript.svg';
 import ts from 'programming-languages-logos/src/typescript/typescript.svg';
 
@@ -76,9 +77,12 @@ const Project = ({ myPro }) => {
                     </a>
                 </Button>
                 <Button size="small">
-                    <a href={myPro.link} alt='view link' target='_blank' rel='noopener noreferrer'>
-                        <VisibilityIcon className={classes.icons} />
-                    </a>
+                    {myPro.link ?
+                    (<a href={myPro.link} alt='view link' target='_blank' rel='noopener noreferrer'>
+                    <VisibilityIcon className={classes.icons} />
+                </a>)
+                    : (<VisibilityOffIcon className={classes.icons}/>)}
+                    
                 </Button>
             </CardActions>
         </Card>

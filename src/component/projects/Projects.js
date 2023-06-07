@@ -41,7 +41,7 @@ const myProjects = [
         features: 'In this application user can use ChatGPT writing text and using own voice',
         technology: 'JavaScript, React, NodeJs, react-speech-recognition API, OpenAI API',
         gitLink: 'https://github.com/mahmudulhasan5050/chatGPT_voice',
-        link: 'https://chatgpt-with-voice.netlify.app/'
+        link: ''
     },
     {
         type: 'TypeScript',
