@@ -30,7 +30,7 @@ const myProjects = [
     {
         type: 'TypeScript',
         name: 'Cake Ordering App',
-        features: 'Cake Ordering, Order status, Admin User, Login and Logout and more. ',
+        features: 'Cake Ordering, Order status, Admin User, Login and Logout and more. Login credentials are available in Cover Letter',
         technology: 'Node JS, TypeScript, React, Redux Toolkit, Express, MongoDB, Material UI and AWS EC2 instance to deploy.',
         gitLink: 'https://github.com/mahmudulhasan5050/cake_ordering_app',
         link: 'http://ec2-16-170-228-119.eu-north-1.compute.amazonaws.com/'
