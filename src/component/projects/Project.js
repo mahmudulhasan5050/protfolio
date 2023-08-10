@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
     },
     media: {
         height: 200,
-        width: 170,
+        width: 200,
         margin: 'auto'
     },
     icons: {
@@ -38,18 +38,15 @@ const Project = ({ myPro }) => {
     const theme = useTheme();
     const matchesSm = useMediaQuery(theme.breakpoints.down("sm"));
 
-    const arr = ["JavaScript", "TypeScript"]
-    const lan = arr.find(it => (myPro.type === it))
-
-
     return (
         <Card className={classes.card}>
             <CardMedia
                 component="img"
                 alt={myPro.type}
                 className={classes.media}
-                height="140"
-                image={(lan === 'JavaScript') ? js : ts}
+
+                image={myPro.image}
+                sx={{width:"200px" }}
             />
             <CardContent>
                 <Typography gutterBottom

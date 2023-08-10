@@ -10,7 +10,7 @@ import { useTheme } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Divider from '@material-ui/core/Divider';
 import Hidden from '@material-ui/core/Hidden';
-import image from '../assets/myImage.png';
+import image from '../assets/myImage.JPG';
 
 
 const useStyles = makeStyles(theme => ({

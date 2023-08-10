@@ -4,6 +4,9 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
+import javaScript from '../../assets/lang/javaScript.png';
+import typeScript from '../../assets/lang/typeScript.png';
+import netCore from '../../assets/lang/netCore.png';
 
 import Project from './Project';
 
@@ -33,7 +36,8 @@ const myProjects = [
         features: 'Cake Ordering, Order status, Admin User, Login and Logout and more. Login credentials are available in Cover Letter',
         technology: 'Node JS, TypeScript, React, Redux Toolkit, Express, MongoDB, Material UI and AWS EC2 instance to deploy.',
         gitLink: 'https://github.com/mahmudulhasan5050/cake_ordering_app',
-        link: 'http://ec2-16-170-228-119.eu-north-1.compute.amazonaws.com/'
+        link: 'http://ec2-16-170-228-119.eu-north-1.compute.amazonaws.com/',
+        image: typeScript
     },
     {
         type: 'JavaScript',
@@ -41,7 +45,8 @@ const myProjects = [
         features: 'In this application user can use ChatGPT writing text and using own voice',
         technology: 'JavaScript, React, NodeJs, react-speech-recognition API, OpenAI API',
         gitLink: 'https://github.com/mahmudulhasan5050/ChatGPT_voice',
-        link: ''
+        link: '',
+        image: javaScript
     },
     {
         type: 'TypeScript',
@@ -49,7 +54,8 @@ const myProjects = [
         features: 'Country Info Table, Searching, Individual Country Info, Favorite Country Table and Mobile Responsive. ',
         technology: 'TypeScript, React, Redux and Material UI',
         gitLink: 'https://github.com/mahmudulhasan5050/project_country_info',
-        link: 'https://ephemeral-valkyrie-4e4e57.netlify.app/'
+        link: 'https://ephemeral-valkyrie-4e4e57.netlify.app/',
+        image: typeScript
     },
     {
         type: 'JavaScript',
@@ -57,7 +63,17 @@ const myProjects = [
         features: 'List of Breweries Info, Searching, Individual Brewery Info and Mobile Responsive.',
         technology: 'JavaScript, React and Material UI',
         gitLink: 'https://github.com/mahmudulhasan5050/project_breweries',
-        link: 'https://vigilant-noyce-f53e5e.netlify.app/'
+        link: 'https://vigilant-noyce-f53e5e.netlify.app/',
+        image: javaScript
+    },
+    {
+        type: '.NET Core 6 C#',
+        name: 'Naan&Curry',
+        features: 'Dynamic buffet menu change according to the date and a la carte menu change active and inactive option and table booking.',
+        technology: 'C#, .NET Core 6 framework, Bootstrap template',
+        gitLink: 'https://github.com/mahmudulhasan5050/naanNcurry',
+        link: '',
+        image: netCore
     }
 ]
 
