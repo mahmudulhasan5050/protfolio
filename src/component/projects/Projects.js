@@ -69,8 +69,8 @@ const myProjects = [
     {
         type: '.NET Core 6 C#',
         name: 'Naan&Curry',
-        features: 'Dynamic buffet menu change according to the date and a la carte menu change active and inactive option and table booking.',
-        technology: 'C#, .NET Core 6 framework, Bootstrap template',
+        features: 'Dynamic buffet menu change according to the date and a la carte menu and table booking.',
+        technology: 'C#, .NET Core 6 framework, Bootstrap template, MailKit',
         gitLink: 'https://github.com/mahmudulhasan5050/naanNcurry',
         link: '',
         image: netCore
