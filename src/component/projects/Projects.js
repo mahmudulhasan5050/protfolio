@@ -54,7 +54,7 @@ const myProjects = [
         features: 'Country Info Table, Searching, Individual Country Info, Favorite Country Table and Mobile Responsive. ',
         technology: 'TypeScript, React, Redux and Material UI',
         gitLink: 'https://github.com/mahmudulhasan5050/project_country_info',
-        link: 'https://ephemeral-valkyrie-4e4e57.netlify.app/',
+        link: 'https://countrydetailsinfo.netlify.app/',
         image: typeScript
     },
     {
