@@ -93,7 +93,8 @@ const Project = ({ myPro }) => {
                         : (<VisibilityOffIcon className={classes.icons} />)}
 
                 </Button>
-                <Button onClick={openPopup}><VideocamIcon className={classes.icons} /></Button>
+                {myPro.videoUrl !== "" ? <Button onClick={openPopup}><VideocamIcon className={classes.icons} /></Button> : undefined}
+                
                 <div>
                     {isPopupOpen && (
                         <VideoPopup

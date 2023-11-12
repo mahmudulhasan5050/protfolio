@@ -70,7 +70,7 @@ const myProjects = [
         gitLink: 'https://github.com/mahmudulhasan5050/naanNcurry',
         link: '',
         image: netCore,
-      
+        videoUrl: ""
     }
 ]
 

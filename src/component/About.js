@@ -143,6 +143,7 @@ const eduSkillInfo = [
             'NodeJs',
             'Redux',
             'C#',
+            '.NET Core',
             'Axios',
             'Express',
             'MySQL Database',
