@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
@@ -11,8 +11,9 @@ import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
-import js from 'programming-languages-logos/src/javascript/javascript.svg';
-import ts from 'programming-languages-logos/src/typescript/typescript.svg';
+import VideocamIcon from '@material-ui/icons/Videocam';
+import VideoPopup from './VideoPopup';
+
 
 
 
@@ -38,6 +39,17 @@ const Project = ({ myPro }) => {
     const theme = useTheme();
     const matchesSm = useMediaQuery(theme.breakpoints.down("sm"));
 
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+    const openPopup = () => {
+        setIsPopupOpen(true);
+    };
+
+    const closePopup = () => {
+        setIsPopupOpen(false);
+    };
+
+
     return (
         <Card className={classes.card}>
             <CardMedia
@@ -46,7 +58,7 @@ const Project = ({ myPro }) => {
                 className={classes.media}
 
                 image={myPro.image}
-                sx={{width:"200px" }}
+                sx={{ width: "200px" }}
             />
             <CardContent>
                 <Typography gutterBottom
@@ -75,12 +87,21 @@ const Project = ({ myPro }) => {
                 </Button>
                 <Button size="small">
                     {myPro.link ?
-                    (<a href={myPro.link} alt='view link' target='_blank' rel='noopener noreferrer'>
-                    <VisibilityIcon className={classes.icons} />
-                </a>)
-                    : (<VisibilityOffIcon className={classes.icons}/>)}
-                    
+                        (<a href={myPro.link} alt='view link' target='_blank' rel='noopener noreferrer'>
+                            <VisibilityIcon className={classes.icons} />
+                        </a>)
+                        : (<VisibilityOffIcon className={classes.icons} />)}
+
                 </Button>
+                <Button onClick={openPopup}><VideocamIcon className={classes.icons} /></Button>
+                <div>
+                    {isPopupOpen && (
+                        <VideoPopup
+                            videoUrl={myPro.videoUrl}
+                            onClose={closePopup}
+                        />
+                    )}
+                </div>
             </CardActions>
         </Card>
     )
