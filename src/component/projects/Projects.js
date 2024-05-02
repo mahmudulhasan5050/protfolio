@@ -36,9 +36,9 @@ const myProjects = [
         type: 'TypeScript',
         name: 'Cake Ordering App',
         features: 'Cake Ordering, Order status, Admin User, Login and Logout and more. Login credentials are available in Cover Letter',
-        technology: 'Node JS, TypeScript, React, Redux Toolkit, Express, MongoDB, Material UI and AWS EC2 instance to deploy.',
+        technology: 'Node JS, TypeScript, React, Redux Toolkit, Express, MongoDB and Material UI.',
         gitLink: 'https://github.com/mahmudulhasan5050/cake_ordering_app',
-        link: 'http://ec2-16-170-228-119.eu-north-1.compute.amazonaws.com/',
+        //link: 'http://ec2-16-170-228-119.eu-north-1.compute.amazonaws.com/',
         image: typeScript,
         videoUrl: cakeVideo
     },
@@ -48,7 +48,7 @@ const myProjects = [
         features: 'In this application user can use ChatGPT writing text and using own voice',
         technology: 'JavaScript, React, NodeJs, react-speech-recognition API, OpenAI API',
         gitLink: 'https://github.com/mahmudulhasan5050/ChatGPT_voice',
-        link: '',
+        //link: '',
         image: javaScript,
         videoUrl: ""
     },
@@ -58,7 +58,7 @@ const myProjects = [
         features: 'Country Info Table, Searching, Individual Country Info, Favorite Country Table and Mobile Responsive. ',
         technology: 'TypeScript, React, Redux and Material UI',
         gitLink: 'https://github.com/mahmudulhasan5050/project_country_info',
-        link: 'https://countrydetailsinfo.netlify.app/',
+        //link: 'https://countrydetailsinfo.netlify.app/',
         image: typeScript,
         videoUrl: countryVideo
     },
@@ -68,7 +68,7 @@ const myProjects = [
         features: 'Dynamic buffet menu change according to the date and a la carte menu and table booking.',
         technology: 'C#, .NET Core 6 framework, Bootstrap template, MailKit',
         gitLink: 'https://github.com/mahmudulhasan5050/naanNcurry',
-        link: '',
+        //link: '',
         image: netCore,
         videoUrl: ""
     }

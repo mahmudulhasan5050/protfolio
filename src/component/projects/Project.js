@@ -9,8 +9,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import VisibilityIcon from '@material-ui/icons/Visibility';
-import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
+//import VisibilityIcon from '@material-ui/icons/Visibility';
+//import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import VideoPopup from './VideoPopup';
 
@@ -85,14 +85,16 @@ const Project = ({ myPro }) => {
                         <GitHubIcon className={classes.icons} />
                     </a>
                 </Button>
-                <Button size="small">
+
+                {/* This button is for future use*/}
+                {/* <Button size="small">
                     {myPro.link ?
                         (<a href={myPro.link} alt='view link' target='_blank' rel='noopener noreferrer'>
                             <VisibilityIcon className={classes.icons} />
                         </a>)
                         : (<VisibilityOffIcon className={classes.icons} />)}
 
-                </Button>
+                </Button> */}
                 {myPro.videoUrl !== "" ? <Button onClick={openPopup}><VideocamIcon className={classes.icons} /></Button> : undefined}
                 
                 <div>
