@@ -26,11 +26,11 @@ const useStyles = makeStyles(theme => ({
     },
     gridItemAll: {
         marginTop: '2em',
-        width:'100%'
+        width: '100%'
     },
 
 }));
- 
+
 const myProjects = [
     {
         type: 'TypeScript',
@@ -71,6 +71,16 @@ const myProjects = [
         //link: '',
         image: netCore,
         videoUrl: ""
+    },
+    {
+        type: '.NET Core 6 C#',
+        name: 'Dynamic Form Builder',
+        features: 'Survey or Exam question creation was the main goal. It is also possible to create sub-question for each question. All answers can be saved in SQL database',
+        technology: 'C#, .NET Core 6 framework Razor Pages, Bootstrap template, MySQL database',
+        gitLink: 'https://github.com/mahmudulhasan5050/dynamicFormBuilder',
+        //link: '',
+        image: netCore,
+        videoUrl: ""
     }
 ]
 
@@ -79,7 +89,7 @@ export default function Projects() {
     const theme = useTheme();
     const matchesSm = useMediaQuery(theme.breakpoints.down("sm"));
 
- console.log(myProjects)
+    console.log(myProjects)
     return (
 
         <Grid container direction='column' justify='center' className={classes.main}>
