@@ -40,7 +40,7 @@ const myProjects = [
         gitLink: 'https://github.com/mahmudulhasan5050/cake_ordering_app',
         //link: 'http://ec2-16-170-228-119.eu-north-1.compute.amazonaws.com/',
         image: typeScript,
-        videoUrl: cakeVideo
+        videoUrl: ""
     },
     {
         type: 'JavaScript',
